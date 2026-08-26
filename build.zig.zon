@@ -1,0 +1,21 @@
+.{
+    .name = .libglvnd,
+    .version = "1.7.0",
+    .minimum_zig_version = "0.16.0",
+    .dependencies = .{
+        .glvnd = .{
+            .url = "https://gitlab.freedesktop.org/glvnd/libglvnd/-/archive/v1.7.0/libglvnd-v1.7.0.tar.gz",
+            .hash = "N-V-__8AALDiZABTnzA-rC_UqxMTk-OyL68NsuPpYJV-ztA1",
+        },
+        .autoconfigheader = .{
+            .url = "https://github.com/akunaakwei/zig-autoconfigheader/archive/8fe4f925cd29f87dc9cafe27382358d0839c9920.tar.gz",
+            .hash = "autoconfigheader-0.0.1-M7E_ZdAvAACUUzXpcsUySSgP_-ACO70YfZhNU7POHk1l",
+        },
+    },
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "LICENSE",
+    },
+    .fingerprint = 0x24bd9960470ec99,
+}
