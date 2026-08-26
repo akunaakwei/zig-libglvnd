@@ -15,6 +15,7 @@
     .paths = .{
         "build.zig",
         "build.zig.zon",
+        "include",
         "LICENSE",
     },
     .fingerprint = 0x24bd9960470ec99,

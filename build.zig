@@ -189,6 +189,7 @@ pub fn build(b: *std.Build) void {
         .linkage = linkage,
     });
     lib_glvnd.installHeadersDirectory(glvnd_dep.path("include"), ".", .{});
+    lib_glvnd.installHeadersDirectory(b.path("include"), ".", .{});
     b.installArtifact(lib_glvnd);
 
     const gen_step = b.step("gen", "generate source code");
